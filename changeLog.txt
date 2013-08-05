@@ -1,6 +1,7 @@
-Release Date:05-08-2013
 
-Release Version:1.6
+## Release Version:1.6
+
+Release Date:05-08-2013
 
 The following feature have been pushed to the latest :
 

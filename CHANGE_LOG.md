@@ -1,7 +1,7 @@
-* [Release Version 1.2]()
+* [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/CHANGE_LOG.md#version-16)
 
 
-## Version 1.2
+## Version 1.6
 
 **Release Date:** 05-08-2013
 
@@ -36,7 +36,7 @@ getAllMessagesFromBuddy
 getAllMessagesFromGroup
 ```
 
-This release contains the following bug fix:
+**This release contains the following bug fix:**
 
 ```
 None

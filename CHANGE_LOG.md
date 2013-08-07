@@ -39,5 +39,5 @@ getAllMessagesFromGroup
 This release contains the following bug fix:
 
 ```
-None
+deleteDocumentsByKeyValue method bug fixed.
 ```

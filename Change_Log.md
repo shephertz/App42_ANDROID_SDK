@@ -1,4 +1,4 @@
-* [Release Version 1.6.2](https://github.com/shephertz/App42_ANDROID_SDK/edit/master/Change_Log.md#version-162)
+* [Release Version 1.6.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-162)
 
 
 ## Version 1.6.2

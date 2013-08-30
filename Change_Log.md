@@ -78,3 +78,5 @@ getAllMessagesFromGroup
 ```
 None
 ```
+
+**Note** : If you wan't to download [1.6 repo] (https://github.com/shephertz/App42_ANDROID_SDK/raw/1.x/1.6/app42_android_1.6.zip) click here.

@@ -1,5 +1,5 @@
-* [Release Version 1.6.1](https://github.com/shephertz/App42_CSHARP_SDK/blob/master/Change%20Log.md#version-16)
-* [Release Version 1.6](https://github.com/shephertz/App42_CSHARP_SDK/blob/master/Change%20Log.md#version-17)
+* [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-161)
+* [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-16)
 
 ## Version 1.6.1
 

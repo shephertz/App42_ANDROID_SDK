@@ -1,6 +1,43 @@
+* [Release Version 1.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-17)
 * [Release Version 1.6.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-162)
-* [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
-* [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+## Version 1.7
+
+**Release Date:** 23-09-2013
+
+**Release Version:** 1.7
+
+**The following Services have been pushed to the latest :**
+
+```
+Avatar Service
+Achievement Service
+```
+
+**The following features have been pushed to the services :**
+
+**SOCIAL SERVICE**
+
+```
+facebookPublishStream
+facebookLinkPost
+facebookLinkPostWithCustomThumbnail
+getFacebookProfile
+```
+
+**PUSHNOTIFICATION SERVICE**
+
+```
+sendPushMessageToGroup
+deleteDeviceToken
+```
+
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 1.6.2
 
@@ -19,64 +56,3 @@ None
 ```
 installation bug fixed
 ```
-
-## Version 1.6.1
-
-**Release Date:** 7-08-2013
-
-**Release Version:** 1.6.1
-
-**The following feature have been pushed to the latest :**
-
-```
-None
-```
-
-**This release contains the following bug fix:**
-
-```
-deleteDocumentByKeyValue
-```
-
-## Version 1.6
-
-**Release Date:** 05-08-2013
-
-**Release Version:** 1.6
-
-**The following feature have been pushed to the latest :**
-
-
-
-**PUSHNOTIFICATION SERVICE**
-```
-unsubscribeDeviceToChannel
-```
-
-**UPLOAD SERVICE**
-
-```
-UploadFileForFriend
-UploadFileForFriends
-UploadFileForGroup
-````
-
-
-**BUDDY SERVICE**
-
-```
-sendMessageToGroup
-sendMessageToFriend
-sendMessageToFriends
-getAllMessages
-getAllMessagesFromBuddy
-getAllMessagesFromGroup
-```
-
-**This release contains the following bug fix:**
-
-```
-None
-```
-
-**Note** : If you wan't to download [1.6 repo] (https://github.com/shephertz/App42_ANDROID_SDK/raw/1.x/1.6/app42_android_1.6.zip) click here.

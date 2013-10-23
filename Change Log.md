@@ -1,41 +1,22 @@
-* [Release Version 1.6](https://github.com/shephertz/App42_CSHARP_SDK/blob/master/Change%20Log.md#version-16)
-* [Release Version 1.7](https://github.com/shephertz/App42_CSHARP_SDK/blob/master/Change%20Log.md#version-17)
+* [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-161)
+* [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-16)
 
-## Version 1.7
+## Version 1.6.1
 
-**Release Date:** 23-09-2013
+**Release Date:** 7-08-2013
 
-**Release Version:** 1.7
+**Release Version:** 1.6.1
 
-**The following Services have been pushed to the latest :**
-
-```
-Achievement Service
-```
-
-**The following features have been pushed to the services :**
-
-**SOCIAL SERVICE**
+**The following feature have been pushed to the latest :**
 
 ```
-facebookPublishStream
-facebookLinkPost
-facebookLinkPostWithCustomThumbnail
-getFacebookProfile
+None
 ```
-
-**PUSHNOTIFICATION SERVICE**
-
-```
-sendPushMessageToGroup
-deleteDeviceToken
-```
-
 
 **This release contains the following bug fix:**
 
 ```
-None
+deleteDocumentByKeyValue
 ```
 
 ## Version 1.6
@@ -47,64 +28,36 @@ None
 **The following feature have been pushed to the latest :**
 
 
-**SCOREBOARD SERVICE**
-
-```
-GetTopNRankers 
-GetTopNRankers (Between Date)
-EditScoreValueById 
-GetTopRankersFromBuddyGroup
-```
-
-
-**STORAGE SERVICE**
-
-```
-DeleteAllDocuments
-FindDocumentsByLocation
-DeleteDocumentsByKeyValue
-```
-
-
-**USER SERVICE**
-
-```
-LogOut
-```
-
 
 **PUSHNOTIFICATION SERVICE**
-
 ```
-UnsubscribeDeviceToChannel
-SubscribeToChannel
+unsubscribeDeviceToChannel
 ```
-
 
 **UPLOAD SERVICE**
 
 ```
 UploadFileForFriend
-UploadFileForFriendS
+UploadFileForFriends
 UploadFileForGroup
-```
+````
 
 
 **BUDDY SERVICE**
 
 ```
-SendMessageToGroup
-SendMessageToFriend
-SendMessageToFriends
-GetAllMessages
-GetAllMessagesFromBuddy
-GetAllMessagesFromGroup
+sendMessageToGroup
+sendMessageToFriend
+sendMessageToFriends
+getAllMessages
+getAllMessagesFromBuddy
+getAllMessagesFromGroup
 ```
-
 
 **This release contains the following bug fix:**
 
 ```
 None
 ```
-**Note :-** New Async API For All Methods & Now support .net verson 3.5.
+
+**Note** : If you wan't to download [1.6 repo] (https://github.com/shephertz/App42_ANDROID_SDK/raw/1.x/1.6/app42_android_1.6.zip) click here.

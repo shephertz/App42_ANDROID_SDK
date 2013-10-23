@@ -5,7 +5,7 @@
 
 ## Version 1.8
 
-**Release Date:** 22-10-2013
+**Release Date:** 23-10-2013
 
 **Release Version:** 1.8
 

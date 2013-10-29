@@ -1,8 +1,42 @@
-App42_ANDROID_SDK
-=================
+App42_BPaaS_ANDROID_SDK
+==============
 
-App42 Cloud API Client SDK files for Android
+App42 BPaaS Cloud API Client SDK JAR files for ANDROID
 
-[Download the latest App42 Android SDK] (https://github.com/shephertz/App42_ANDROID_SDK/raw/master/1.7/app42_android_1.7.zip)
+- Download the App42 BPaaS ANDROID SDK
+- Unzip the file and open **App42 ANDROID Sample** project.
+- Add the **App42_BPaaS_ANDROID_SDK_x.x.x.jar** into library path. **Properties -> ANDROID Build Path -> Liabraries -> Add External JARs**
+- Initialize the library using :-
 
-[Documentation and API guide] (http://api.shephertz.com/app42-dev/android-backend-apis.php)
+```
+App42API.initialize("ANDROID_ACTIVITY_CONTEXT","API_KEY","SECRET_KEY");
+App42API.setBaseURL("<YOUR_API_SERVER_URL>");
+```
+
+- Instantiate the service that one wants to use in the App, e.g. using User service one has to do the following :-
+
+```
+UserService userService = App42API.buildUserService();
+```
+
+- Now one can call associated method of that service e.g. user creation can be done with the following snippet :-
+
+```
+String userName = "Nick";
+String pwd = "********";
+String emailId = "nick@shephertz.co.in";    
+userService.createUser( userName, pwd, emailId, new App42CallBack() {
+	public void onSuccess(Object response) 
+	{
+		User user = (User)response;
+		System.out.println("userName is " + user.getUserName());
+		System.out.println("emailId is " + user.getEmail());
+	}
+	public void onException(Exception ex) 
+	{
+		System.out.println("Exception Message"+ex.getMessage());
+	}
+});   
+```
+
+- Build the project and run.

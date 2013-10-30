@@ -1,4 +1,4 @@
-App42_BPaaS_ANDROID_SDK
+App42_BPaaS_Android_SDK
 ==============
 
 App42 BPaaS Cloud API Client SDK JAR files for ANDROID

@@ -1,7 +1,7 @@
 App42_BPaaS_Android_SDK
 ==============
 
-App42 BPaaS Cloud API Client SDK JAR files for ANDROID
+App42 BPaaS Cloud API Client SDK for ANDROID
 
 - Download the App42 BPaaS ANDROID SDK
 - Unzip the file and open **App42 ANDROID Sample** project.

@@ -1,0 +1,63 @@
+* [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-161)
+* [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-16)
+
+## Version 1.6.1
+
+**Release Date:** 7-08-2013
+
+**Release Version:** 1.6.1
+
+**The following feature have been pushed to the latest :**
+
+```
+None
+```
+
+**This release contains the following bug fix:**
+
+```
+deleteDocumentByKeyValue
+```
+
+## Version 1.6
+
+**Release Date:** 05-08-2013
+
+**Release Version:** 1.6
+
+**The following feature have been pushed to the latest :**
+
+
+
+**PUSHNOTIFICATION SERVICE**
+```
+unsubscribeDeviceToChannel
+```
+
+**UPLOAD SERVICE**
+
+```
+UploadFileForFriend
+UploadFileForFriends
+UploadFileForGroup
+````
+
+
+**BUDDY SERVICE**
+
+```
+sendMessageToGroup
+sendMessageToFriend
+sendMessageToFriends
+getAllMessages
+getAllMessagesFromBuddy
+getAllMessagesFromGroup
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
+
+**Note** : If you wan't to download [1.6 repo] (https://github.com/shephertz/App42_ANDROID_SDK/raw/1.x/1.6/app42_android_1.6.zip) click here.

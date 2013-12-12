@@ -17,7 +17,7 @@ Caching and Offline Storage .
 
 **The following features have been pushed to the services :**
 
-**SOCIAL SERVICE**
+**SCOREBOARD SERVICE**
 
 ```
 getTopNRankersFromFacebook (With date range)

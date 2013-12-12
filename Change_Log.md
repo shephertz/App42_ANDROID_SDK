@@ -20,7 +20,7 @@ Caching and Offline Storage .
 **SOCIAL SERVICE**
 
 ```
-sendPushToTargetUsers
+getTopNRankersFromFacebook (With date range)
 ```
 
 ```

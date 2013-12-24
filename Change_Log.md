@@ -1,30 +1,28 @@
-* [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-20)
+* [Release Version 2.0.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-201)
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 
 
 
-## Version 2.0
+## Version 2.0.1
 
-**Release Date:** 12-12-2013
+**Release Date:** 24-12-2013
 
-**Release Version:** 2.0
+**Release Version:** 2.0.1
 
 **The following features have been pushed :**
 
 ```
-Caching and Offline Storage .
+None
 ```
 
 **The following features have been pushed to the services :**
 
-**SCOREBOARD SERVICE**
-
-```
-getTopNRankersFromFacebook (With date range)
-```
-
 ```
 None
+```
+
+```
+Crash report bug fix.
 ```
 
 

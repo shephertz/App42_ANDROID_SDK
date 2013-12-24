@@ -20,6 +20,7 @@ None
 ```
 None
 ```
+**This release contains the following bug fix:**
 
 ```
 Crash report bug fix.

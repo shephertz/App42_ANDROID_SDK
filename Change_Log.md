@@ -1,13 +1,11 @@
-* [Release Version 2.0.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-201)
+* [Release Version 2.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-21)
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 
 
+## Version 2.1
 
-## Version 2.0.1
-
-**Release Date:** 24-12-2013
-
-**Release Version:** 2.0.1
+**Release Date:** 09-11-2014
+**Release Version:** 2.1
 
 **The following features have been pushed :**
 
@@ -17,8 +15,10 @@ None
 
 **The following features have been pushed to the services :**
 
+**AVATAR SERVICE**
+
 ```
-None
+createAvatar(With InputStream)
 ```
 **This release contains the following bug fix:**
 

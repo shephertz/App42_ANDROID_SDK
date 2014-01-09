@@ -4,7 +4,7 @@
 
 ## Version 2.1
 
-**Release Date:** 09-11-2014
+**Release Date:** 09-01-2014
 **Release Version:** 2.1
 
 **The following features have been pushed :**

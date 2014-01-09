@@ -1,7 +1,30 @@
+* [Release Version 2.0.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-201)
 * [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-20)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/1.x/Change%20Log.md#version-16)
 
+## Version 2.0.1
+
+**Release Date:** 24-12-2013
+
+**Release Version:** 2.0.1
+
+**The following features have been pushed :**
+
+```
+None
+```
+
+**The following features have been pushed to the services :**
+
+```
+None
+```
+**This release contains the following bug fix:**
+
+```
+Crash report bug fix.
+```
 
 ## Version 2.0
 

@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal"
+            android:text="@string/previous_storage"
+            android:textSize="22sp"
+            android:width="160dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:onClick="onInsertClicked"
+            android:text="@string/insert_button"
+            android:width="150dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onFindClicked"
+            android:text="@string/find_button"
+            android:width="150dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:onClick="onUpdateClicked"
+            android:text="@string/update_button"
+            android:width="150dp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom|left"
+        android:drawableLeft="@drawable/back"
+        android:onClick="onPreviousClicked"
+        android:paddingBottom="10dp"
+        android:text="@string/previous_user"
+        android:typeface="monospace"
+        android:width="150dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:drawableRight="@drawable/forward"
+        android:onClick="onNextClicked"
+        android:paddingBottom="10dp"
+        android:text="@string/next_upload"
+        android:typeface="monospace"
+        android:width="150dp" />
+
+</RelativeLayout>

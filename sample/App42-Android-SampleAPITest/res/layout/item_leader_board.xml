@@ -7,19 +7,15 @@
         android:id="@+id/rank"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:textSize="11sp"
         android:gravity="center"
-        android:text="sdahjdsa"
         android:textColor="#FFFFFF"
         android:background="#123456"
         android:ellipsize="end" />
-	<TextView
+    <TextView
         android:id="@+id/name"
         android:layout_width="170dp"
         android:layout_height="30dp"
-        android:textSize="11sp"
         android:gravity="center"
-        android:text="sdahjdsa"
         android:textColor="#FFFFFF"
         android:background="#123456"
         android:ellipsize="end" />
@@ -27,8 +23,6 @@
         android:id="@+id/score"
         android:layout_width="80dp"
         android:layout_height="30dp"
-        android:textSize="11sp"
-             android:text="sdahjdsa"
         android:textColor="#FFFFFF"
         android:background="#123456"
         android:gravity="center" />

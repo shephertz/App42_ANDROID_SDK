@@ -11,12 +11,11 @@
     <string name="signin_button">Sign in</string>
     <string name="register_button">Register</string>
     <string name="getUser_button">Get User</string>
-    <string name="next_button">Next</string>
     <string name="opponent_input">Friend name</string>
     <string name="create_game_button">Start Game</string>
-    <string name="insert_button">Insert</string>
-    <string name="find_button">Find</string>
-    <string name="update_button">Update</string>
+    <string name="insert_button">Save Json</string>
+    <string name="find_button">Find Json</string>
+    <string name="update_button">Update Json</string>
     <string name="uploadFile_button">Upload File</string>
     <string name="getFile_button">Get File</string>
     <string name="saveScore_button">Save Scores</string>
@@ -25,5 +24,20 @@
     <string name="name_button">Name</string>
     <string name="score_button">Score</string>
     <string name="topScore_button">Leader Board</string>
+    <string name="user_button">User Sample</string>
+    <string name="storage_button">Storage Sample</string>
+    <string name="upload_button">Upload Sample</string>
+    <string name="leaderboard_button">Leaderboard Sample</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="next_storage">Storage Sample</string>
+    <string name="previous_user">User Sample</string>
+    <string name="next_upload">Upload Sample</string>
+    <string name="previous_storage">Storage Sample</string>
+    <string name="next_leaderboard">Leaderboard Sample</string>
+    <string name="previous_upload">Upload Sample</string>
+    <string name="next_quit">Quit</string>
+
+    <color name="highlightedTextViewColor">#000088</color>
+    <color name="normalTextViewColor">#000044</color>
 
 </resources>

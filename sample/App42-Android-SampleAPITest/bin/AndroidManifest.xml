@@ -14,7 +14,7 @@
         android:label="@string/app_name"
        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
         <activity
-            android:name="com.app42.api.test.MainActivity"
+            android:name="com.app42.android.sample.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,17 +23,22 @@
             </intent-filter>
         </activity>
          <activity
-            android:name="com.app42.api.test.SecondActivity"
+            android:name="com.app42.android.sample.StorageSample"
             android:label="@string/app_name" >
           
         </activity>
          <activity
-            android:name="com.app42.api.test.ThirdActivity"
+            android:name="com.app42.android.sample.UploadSample"
             android:label="@string/app_name" >
           
         </activity>
          <activity
-            android:name="com.app42.api.test.FourthActivity"
+            android:name="com.app42.android.sample.LeaderboardSample"
+            android:label="@string/app_name" >
+          
+        </activity>
+        <activity
+            android:name="com.app42.android.sample.UserSample"
             android:label="@string/app_name" >
           
         </activity>

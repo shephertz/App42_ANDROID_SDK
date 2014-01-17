@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:gravity="center" >
+    
+    
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:gravity="top|center_horizontal"
+	    android:background="#000000"
+	    android:orientation="vertical" >
+
+	<Button
+		     android:layout_height="wrap_content"
+		     android:layout_width="wrap_content"
+		     android:text="@string/saveScore_button"
+		     android:onClick="onSaveScoreClicked" />
+	
+	      <Button
+		     android:layout_height="wrap_content"
+		     android:layout_width="wrap_content"
+		     android:text="@string/getScore_button"
+		     android:onClick="onGetScoreClicked" />
+	  <TextView
+		        android:id="@+id/header"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:maxLines="1"
+		        android:gravity="center"
+		        android:text="@string/topScore_button"
+		        android:textColor="#FFFFFF"
+		        android:textSize="16sp" />
+	  
+		<LinearLayout
+		    android:id="@+id/linearLayout1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+	
+		    <LinearLayout
+		        android:layout_width="wrap_content"
+		        android:layout_height="40dp"
+		        android:layout_marginTop="1dp" >
+	
+		        <TextView
+		            android:id="@+id/sernumber"
+		            android:layout_width="60dp"
+		            android:layout_height="match_parent"   
+		            android:background="#ffccbb"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:text="@string/rank_button"
+		            android:textStyle="bold"
+		            android:textColor="#000000"
+		             />
+	
+		        <TextView
+		            android:id="@+id/name"
+		            android:layout_width="140dp"
+		            android:layout_height="match_parent"   
+		            android:background="#ffccbb"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:text="@string/name_button"
+		            android:textStyle="bold"
+		            android:textColor="#000000"
+		             />
+	
+		        <TextView
+		            android:id="@+id/score"
+		            android:layout_width="100dp"
+		            android:layout_height="match_parent"   
+		            android:background="#ffccbb"
+		            android:gravity="center"
+		            android:layout_gravity="center"
+		            android:text="@string/score_button"
+		            android:textColor="#000000"
+		             />
+		    </LinearLayout>
+		   
+		    <ListView
+		        android:id="@+id/leaderBoardList"
+		        android:layout_width="fill_parent"
+		        android:layout_height="0dip"
+		        android:layout_weight="63.53"
+		        android:cacheColorHint="@android:color/transparent"
+		        android:divider="@android:color/transparent"
+		        android:gravity="center_horizontal"
+		        android:listSelector="@android:color/transparent"
+		        >
+		    </ListView>
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom|left"
+        android:drawableLeft="@drawable/back"
+        android:onClick="onPreviousClicked"
+        android:paddingBottom="10dp"
+        android:text="@string/previous_upload"
+        android:typeface="monospace"
+        android:width="150dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="bottom|right"
+        android:drawableRight="@drawable/forward"
+        android:onClick="onNextClicked"
+        android:paddingBottom="10dp"
+        android:text="@string/next_quit"
+        android:typeface="monospace"
+        android:width="150dp" />
+
+</RelativeLayout>

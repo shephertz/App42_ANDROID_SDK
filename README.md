@@ -17,7 +17,6 @@ App42_ANDROID_SDK
  
 5). Put the jar file in class path of your Android project.
 
-
 # Initializing SDK
 You have to instantiate App42API by putting your ApiKey/SecretKey to initialize the SDK.
 

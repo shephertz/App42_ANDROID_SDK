@@ -1,3 +1,4 @@
+* [Release Version 2.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-22)
 * [Release Version 2.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-21)
 * [Release Version 2.0.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-201)
 * [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-20)
@@ -5,6 +6,65 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+## Version 2.2
+
+**Release Date:** 03-02-2014 
+
+**Release Version:** 2.2
+
+**The following features have been pushed :**
+
+```
+Meta info in UserService (getUser,getUsersByRole,getUserByEmailId) and ScoreBoardService(getTopNRankers,getTopNTargetRankers).
+```
+
+**The following features have been pushed to the services :**
+
+**PUSH SERVICE**
+
+```
+sendMessageToInActiveUsers
+scheduleMessageToUser
+```
+
+**STORAGE SERVICE**
+
+```
+updateDocumentByQuery
+```
+
+**REVIEW SERVICE**
+
+```
+deleteReviewByReviewId
+deleteCommentByCommentId
+```
+
+**BUDDY SERVICE**
+
+```
+unFriend
+deleteMessageById
+deleteMessageByIds
+```
+
+**SCOREBOARD SERVICE**
+
+```
+getTopNTargetRankers
+```
+
+**GALLERY SERVICE**
+
+```
+updatePhoto
+```
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
 
 ## Version 2.1
 

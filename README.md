@@ -11,9 +11,9 @@ __Download And Set Up SDK :-__
 
 2). Unzip downloaded Zip file. Unzip folder contains version folder of jar and sample folder.
 
-3). Version folder will contain App42_ANDROID-x.x.x.jar and docs.
+3). Version folder will contain App42_ANDROID_SDK_x.x.x.jar and docs.
 
-4). Then add App42_ANDROID-x.x.x.jar in your lib folder.
+4). Then add App42_ANDROID_SDK_x.x.x.jar in your lib folder.
  
 5). Put the jar file in class path of your Android project.
 

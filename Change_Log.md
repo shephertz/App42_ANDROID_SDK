@@ -1,3 +1,4 @@
+* [Release Version 2.4](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-24)
 * [Release Version 2.3](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-23)
 * [Release Version 2.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-22)
 * [Release Version 2.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-21)
@@ -6,6 +7,53 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+
+## Version 2.4
+
+**Release Date:** 04-04-2014 
+
+**Release Version:** 2.4
+
+**The following feature has been deleted to the service :**
+
+**USER SERVICE**
+
+```
+resetUserPassword With Credentials
+```
+
+**The following features have been pushed to the services :**
+
+**PUSH SERVICE**
+
+```
+unsubscribeDevice
+resubscribeDevice
+deleteAllDevices
+sendPushMessageToDevice
+```
+
+**REVIEW SERVICE**
+
+```
+getAllReviewsByUser
+```
+
+**SCOREBOARD SERVICE**
+
+```
+getUsersWithScoreRange
+```
+
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
+
+
 
 ## Version 2.3
 

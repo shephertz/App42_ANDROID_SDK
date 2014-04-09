@@ -1,3 +1,4 @@
+* [Release Version 2.5](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-25)
 * [Release Version 2.4](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-24)
 * [Release Version 2.3](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-23)
 * [Release Version 2.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-22)
@@ -8,6 +9,31 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+## Version 2.5
+
+**Release Date:** 09-04-2014 
+
+**Release Version:** 2.5
+
+**The following features have been pushed :**
+
+```
+New NokiaX enum added in push DeviceType.
+```
+
+**The following features have been pushed to the services :**
+
+**PUSH SERVICE**
+
+```
+storeDeviceToken with DeviceType
+```
+
+**This release contains the following bug fix:**
+
+```
+None.
+```
 
 ## Version 2.4
 

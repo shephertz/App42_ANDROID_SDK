@@ -1,3 +1,4 @@
+* [Release Version 2.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-261)
 * [Release Version 2.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-26)
 * [Release Version 2.5](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-25)
 * [Release Version 2.4](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-24)
@@ -10,6 +11,17 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+## Version 2.6.1
+
+**Release Date:** 27-04-2014 
+
+**Release Version:** 2.6.1
+
+**This release contains the following bug fix:**
+
+```
+Bug Fix in Multipart. Remove Unused variable.
+```
 
 ## Version 2.6
 

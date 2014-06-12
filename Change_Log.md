@@ -1,3 +1,4 @@
+* [Release Version 2.6.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-262)
 * [Release Version 2.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-261)
 * [Release Version 2.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-26)
 * [Release Version 2.5](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-25)
@@ -10,6 +11,18 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+## Version 2.6.2
+
+**Release Date:** 2-06-2014 
+
+**Release Version:** 2.6.2
+
+**This release contains the following bug fix:**
+
+```
+Version incompatible 
+```
 
 ## Version 2.6.1
 
@@ -131,6 +144,13 @@ getAllReviewsByUser
 getUsersWithScoreRange
 ```
 
+**USER SERVICE**
+
+```
+getUsersByProfileData
+getUsersByGroup
+createUserWithProfile
+```
 
 **This release contains the following bug fix:**
 

@@ -5,6 +5,6 @@
 	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="gen"/>
-	<classpathentry exported="true" kind="lib" path="libs/App42_ANDROID_SDK_2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/App42_ANDROID_SDK_2.7.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

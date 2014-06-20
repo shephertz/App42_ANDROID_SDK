@@ -1,3 +1,4 @@
+* [Release Version 2.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-27)
 * [Release Version 2.6.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-262)
 * [Release Version 2.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-261)
 * [Release Version 2.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-26)
@@ -11,6 +12,25 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+## Version 2.7
+
+**Release Date:** 20-06-2014 
+
+**Release Version:** 2.7
+
+**The following Services have been pushed to the latest :**
+
+```
+Timer Service
+Gift Service
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 2.6.2
 

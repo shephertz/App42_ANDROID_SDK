@@ -3,7 +3,6 @@ com.shephertz.app42.paas.sdk.android.abtest
 com.shephertz.app42.paas.sdk.android.achievement
 com.shephertz.app42.paas.sdk.android.avatar
 com.shephertz.app42.paas.sdk.android.buddy
-com.shephertz.app42.paas.sdk.android.connection
 com.shephertz.app42.paas.sdk.android.customcode
 com.shephertz.app42.paas.sdk.android.email
 com.shephertz.app42.paas.sdk.android.gallery

@@ -1,3 +1,4 @@
+* [Release Version 2.8.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-281)
 * [Release Version 2.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-28)
 * [Release Version 2.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-27)
 * [Release Version 2.6.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-262)
@@ -13,6 +14,19 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+
+## Version 2.8.1
+
+**Release Date:** 22-08-2014 
+
+**Release Version:** 2.8.1
+
+**This release contains the following bug fix:**
+
+```
+Debug and print statements removed .
+```
 
 ## Version 2.8
 

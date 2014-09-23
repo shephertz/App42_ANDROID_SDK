@@ -18,7 +18,7 @@
 
 ## Version 2.9
 
-**Release Date:** 24-09-2014 
+**Release Date:** 23-09-2014 
 
 **Release Version:** 2.9
 

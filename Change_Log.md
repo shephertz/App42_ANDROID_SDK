@@ -1,3 +1,4 @@
+* [Release Version 2.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-29)
 * [Release Version 2.8.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-281)
 * [Release Version 2.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-28)
 * [Release Version 2.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-27)
@@ -15,6 +16,45 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+## Version 2.9
+
+**Release Date:** 24-09-2014 
+
+**Release Version:** 2.9
+
+**The following Services have been pushed to the latest :**
+
+```
+BravoBoard Service
+```
+
+**PUSH NOTIFICATION SERVICE**
+
+```
+getAllDevicesOfUser
+```
+
+**BUDDY SERVICE**
+
+```
+deleteAllMessages
+getBlockedBuddyList
+```
+
+**QUERY BUILDER**
+
+```
+setCreatedOn
+setUpdatedOn
+setDocumentId
+```
+
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 2.8.1
 

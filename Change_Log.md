@@ -22,11 +22,13 @@
 
 **Release Version:** 2.9
 
-**The following Services have been pushed to the latest :**
+**The following Service has been pushed to the latest :**
 
 ```
 BravoBoard Service
 ```
+
+**The following features have been pushed to the services :**
 
 **PUSH NOTIFICATION SERVICE**
 

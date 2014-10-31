@@ -41,7 +41,7 @@ public class UploadSample extends Activity implements
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.upload);
 		imageView = (ImageView) findViewById(R.id.cdnImage);
-		asyncService = AsyncApp42ServiceApi.instance(this);
+		asyncService = AsyncApp42ServiceApi.instance();
 	}
 
 	public void onPreviousClicked(View view) {

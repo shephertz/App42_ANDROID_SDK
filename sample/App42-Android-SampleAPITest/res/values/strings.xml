@@ -39,5 +39,5 @@
 
     <color name="highlightedTextViewColor">#000088</color>
     <color name="normalTextViewColor">#000044</color>
- <string name="analytics_sample">Analytics Sample</string>
+
 </resources>

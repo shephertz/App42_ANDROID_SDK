@@ -26,7 +26,7 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.storage);
-		asyncService = AsyncApp42ServiceApi.instance(this);
+		asyncService = AsyncApp42ServiceApi.instance();
 	}
 	
 	public void onPreviousClicked(View view) {

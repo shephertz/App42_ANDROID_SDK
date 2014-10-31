@@ -7,15 +7,12 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
-
-    <uses-permission android:name="android.permission.INTERNET" />
-
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+   <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:name="com.app42.android.sample.SampleApplication"
+ 
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" >
+       android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen">
         <activity
             android:name="com.app42.android.sample.MainActivity"
             android:label="@string/app_name" >
@@ -25,35 +22,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
+         <activity
             android:name="com.app42.android.sample.StorageSample"
             android:label="@string/app_name" >
+          
         </activity>
-        <activity
+         <activity
             android:name="com.app42.android.sample.UploadSample"
             android:label="@string/app_name" >
+          
         </activity>
-        <activity
+         <activity
             android:name="com.app42.android.sample.LeaderboardSample"
             android:label="@string/app_name" >
+          
         </activity>
         <activity
             android:name="com.app42.android.sample.UserSample"
             android:label="@string/app_name" >
+          
         </activity>
-        <activity
-            android:name="com.app42.android.sample.AnalyticsSample"
-            android:label="@string/app_name" >
-        </activity>
-
-        <receiver android:name="com.shephertz.app42.paas.sdk.android.App42BroadcastReceiver" >
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name="com.shephertz.app42.paas.sdk.android.AlarmReceiver" />
-
-        <service android:name="com.shephertz.app42.paas.sdk.android.App42DataSyncService" />
     </application>
 
 </manifest>

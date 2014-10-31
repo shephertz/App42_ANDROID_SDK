@@ -20,12 +20,10 @@ public class MainActivity extends Activity  {
 	
 	private String userName = "userNameAks" + new Date().getTime();
 	
-	
 	/** Called when the activity is first created. **/
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		AsyncApp42ServiceApi async=AsyncApp42ServiceApi.instance(this);
 		setContentView(R.layout.main);
 	}
 
@@ -58,11 +56,6 @@ public class MainActivity extends Activity  {
 	public void onLeaderboardClicked(View view) {
 		Intent mainIntent = new Intent(this, LeaderboardSample.class);
 		mainIntent.putExtra(Constants.IntentUserName, userName);
-		this.startActivity(mainIntent);
-	}
-	
-	public void onAnalyticsClicked(View view) {
-		Intent mainIntent = new Intent(this, AnalyticsSample.class);
 		this.startActivity(mainIntent);
 	}
 	

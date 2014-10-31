@@ -4,17 +4,10 @@ import java.math.BigDecimal;
 
 import org.json.JSONObject;
 
-import android.content.Context;
 import android.os.Handler;
 
-import com.shephertz.app42.paas.sdk.android.App42API;
-import com.shephertz.app42.paas.sdk.android.App42CacheManager;
-import com.shephertz.app42.paas.sdk.android.App42CacheManager.Policy;
-import com.shephertz.app42.paas.sdk.android.App42CallBack;
 import com.shephertz.app42.paas.sdk.android.App42Exception;
-import com.shephertz.app42.paas.sdk.android.App42Log;
-import com.shephertz.app42.paas.sdk.android.App42Response;
-import com.shephertz.app42.paas.sdk.android.event.EventService;
+import com.shephertz.app42.paas.sdk.android.ServiceAPI;
 import com.shephertz.app42.paas.sdk.android.game.Game;
 import com.shephertz.app42.paas.sdk.android.game.ScoreBoardService;
 import com.shephertz.app42.paas.sdk.android.storage.Storage;
@@ -30,30 +23,24 @@ public class AsyncApp42ServiceApi {
 	private StorageService storageService;
 	private UploadService uploadService;
 	private ScoreBoardService scoreBoardService;
-	private EventService eventService;
 	private static AsyncApp42ServiceApi mInstance = null;
-
-	private AsyncApp42ServiceApi(Context context) {
-		App42API.initialize(context, Constants.App42ApiKey,
+	
+	private AsyncApp42ServiceApi() {
+		ServiceAPI sp = new ServiceAPI(Constants.App42ApiKey,
 				Constants.App42ApiSecret);
-		App42Log.setDebug(true);
-		App42CacheManager.setPolicy(Policy.NETWORK_FIRST);
-		App42API.setOfflineStorage(true);
-		App42API.enableAppStateEventTracking(true);
-		this.userService = App42API.buildUserService();
-		this.storageService = App42API.buildStorageService();
-		this.scoreBoardService = App42API.buildScoreBoardService();
-		this.uploadService = App42API.buildUploadService();
-		this.eventService = App42API.buildEventService();
+		this.userService = sp.buildUserService();
+		this.storageService = sp.buildStorageService();
+		this.scoreBoardService = sp.buildScoreBoardService();
+		this.uploadService = sp.buildUploadService();
 	}
 
 	/*
 	 * instance of class
 	 */
-	public static AsyncApp42ServiceApi instance(Context context) {
+	public static AsyncApp42ServiceApi instance() {
 
 		if (mInstance == null) {
-			mInstance = new AsyncApp42ServiceApi(context);
+			mInstance = new AsyncApp42ServiceApi();
 		}
 
 		return mInstance;
@@ -125,8 +112,7 @@ public class AsyncApp42ServiceApi {
 	/*
 	 * This function gets user's details from APP42.
 	 */
-	public void getUser(final String name,
-			final App42UserServiceListener callBack) {
+	public void getUser(final String name, final App42UserServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
@@ -178,8 +164,7 @@ public class AsyncApp42ServiceApi {
 			@Override
 			public void run() {
 				try {
-					final Storage response = storageService.insertJSONDocument(
-							dbName, collectionName, json);
+					final Storage response = storageService.insertJSONDocument(dbName, collectionName, json);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -199,20 +184,18 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
+	
 	/*
 	 * This function Find JSON Document By Id.
 	 */
-	public void findDocByDocId(final String dbName,
-			final String collectionName, final String docId,
-			final App42StorageServiceListener callBack) {
+	public void findDocByDocId(final String dbName, final String collectionName,
+			final String docId, final App42StorageServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
 			public void run() {
 				try {
-					final Storage response = storageService.findDocumentById(
-							dbName, collectionName, docId);
+					final Storage response = storageService.findDocumentById(dbName, collectionName, docId);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -232,22 +215,19 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
+	
 	/*
 	 * This function Find JSON Document By Id.
 	 */
 	public void updateDocByKeyValue(final String dbName,
 			final String collectionName, final String key, final String value,
-			final JSONObject newJsonDoc,
-			final App42StorageServiceListener callBack) {
+			final JSONObject newJsonDoc, final App42StorageServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
 			public void run() {
 				try {
-					final Storage response = storageService
-							.updateDocumentByKeyValue(dbName, collectionName,
-									key, value, newJsonDoc);
+					final Storage response = storageService.updateDocumentByKeyValue(dbName, collectionName, key, value, newJsonDoc);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -268,34 +248,35 @@ public class AsyncApp42ServiceApi {
 		}.start();
 	}
 
-	public static interface App42StorageServiceListener {
-
+	public static interface App42StorageServiceListener 
+	{
+		
 		public void onDocumentInserted(Storage response);
-
+	
 		public void onUpdateDocSuccess(Storage response);
 
 		public void onFindDocSuccess(Storage response);
 
 		public void onInsertionFailed(App42Exception ex);
-
+		
 		public void onFindDocFailed(App42Exception ex);
 
 		public void onUpdateDocFailed(App42Exception ex);
 	}
 
+	
+	
 	/*
 	 * This function Saves User Score for the Given GameName.
 	 */
 	public void saveScoreForUser(final String gameName,
-			final String gameUserName, final BigDecimal gameScore,
-			final App42ScoreBoardServiceListener callBack) {
+			final String gameUserName, final BigDecimal gameScore, final App42ScoreBoardServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
 			public void run() {
 				try {
-					final Game response = scoreBoardService.saveUserScore(
-							gameName, gameUserName, gameScore);
+					final Game response = scoreBoardService.saveUserScore(gameName, gameUserName, gameScore);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -315,19 +296,19 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
+	
+	
 	/*
 	 * This function Retrieves Top N(max no.) Rankers.
 	 */
-	public void getLeaderBoard(final String gameName, final int max,
-			final App42ScoreBoardServiceListener callBack) {
+	public void getLeaderBoard(final String gameName,
+			final int max, final App42ScoreBoardServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
 			public void run() {
 				try {
-					final Game response = scoreBoardService.getTopNRankers(
-							gameName, max);
+					final Game response = scoreBoardService.getTopNRankers(gameName, max);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -347,30 +328,29 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
-	public static interface App42ScoreBoardServiceListener {
+	
+	public static interface App42ScoreBoardServiceListener 
+	{
 		void onSaveScoreSuccess(Game response);
 
 		void onSaveScoreFailed(App42Exception ex);
-
+		
 		void onLeaderBoardSuccess(Game response);
-
+        
 		void onLeaderBoardFailed(App42Exception ex);
 	}
-
+	
 	/*
 	 * This function Uploads File On App42 Cloud.
 	 */
-	public void uploadImage(final String name, final String filePath,
-			final UploadFileType fileType, final String description,
-			final App42UploadServiceListener callBack) {
+	public void uploadImage(final String name,
+			final String filePath, final UploadFileType fileType, final String description, final App42UploadServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
 			public void run() {
 				try {
-					final Upload response = uploadService.uploadFile(name,
-							filePath, UploadFileType.IMAGE, description);
+					final Upload response = uploadService.uploadFile(name, filePath, UploadFileType.IMAGE, description);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -390,19 +370,18 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
+	
+	
 	/*
 	 * This function Uploads File On App42 Cloud.
 	 */
-	public void getImage(final String fileName,
-			final App42UploadServiceListener callBack) {
+	public void getImage(final String fileName, final App42UploadServiceListener callBack) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
 			@Override
 			public void run() {
 				try {
-					final Upload response = uploadService
-							.getFileByName(fileName);
+					final Upload response = uploadService.getFileByName(fileName);
 					callerThreadHandler.post(new Runnable() {
 						@Override
 						public void run() {
@@ -422,8 +401,10 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
-	public static interface App42UploadServiceListener {
+	
+	
+	public static interface App42UploadServiceListener 
+	{
 		void onUploadImageSuccess(Upload response);
 
 		void onUploadImageFailed(App42Exception ex);
@@ -431,110 +412,6 @@ public class AsyncApp42ServiceApi {
 		void onGetImageSuccess(Upload response);
 
 		void onGetImageFailed(App42Exception ex);
-	}
-
-	public interface App42SampleCallbackListener {
-		void onApp42Result(final App42Response response);
-
-		void onApp42Error(final Exception e);
-	}
-
-	/**
-	 * @param userProperties
-	 * @param callBack
-	 */
-	public void setUserProperties(JSONObject userProperties,
-			final App42SampleCallbackListener callBack) {
-		eventService.setLoggedInUserProperties(userProperties,
-				new App42CallBack() {
-					@Override
-					public void onSuccess(Object response) {
-						callBack.onApp42Result((App42Response) response);
-					}
-
-					@Override
-					public void onException(Exception ex) {
-						callBack.onApp42Error(ex);
-					}
-				});
-	}
-
-	/**
-	 * @param userProperties
-	 * @param callBack
-	 */
-	public void updateUserProperties(JSONObject userProperties,
-			final App42SampleCallbackListener callBack) {
-		eventService.setLoggedInUserProperties(userProperties,
-				new App42CallBack() {
-					@Override
-					public void onSuccess(Object response) {
-						callBack.onApp42Result((App42Response) response);
-					}
-
-					@Override
-					public void onException(Exception ex) {
-						callBack.onApp42Error(ex);
-					}
-				});
-	}
-
-	/**
-	 * @param userProperties
-	 * @param callBack
-	 */
-	public void trackEvent(String eventName, JSONObject eventProperties,
-			final App42SampleCallbackListener callBack) {
-		eventService.trackEvent(eventName, eventProperties,
-				new App42CallBack() {
-					@Override
-					public void onSuccess(Object response) {
-						callBack.onApp42Result((App42Response) response);
-					}
-
-					@Override
-					public void onException(Exception ex) {
-						callBack.onApp42Error(ex);
-					}
-				});
-	}
-
-	/**
-	 * @param userProperties
-	 * @param callBack
-	 */
-	public void trackStartLevel(String levelName, JSONObject levelProps,
-			final App42SampleCallbackListener callBack) {
-		eventService.startActivity(levelName, levelProps, new App42CallBack() {
-			@Override
-			public void onSuccess(Object response) {
-				callBack.onApp42Result((App42Response) response);
-			}
-
-			@Override
-			public void onException(Exception ex) {
-				callBack.onApp42Error(ex);
-			}
-		});
-	}
-
-	/**
-	 * @param userProperties
-	 * @param callBack
-	 */
-	public void trackEndLevel(String levelName, JSONObject levelProps,
-			final App42SampleCallbackListener callBack) {
-		eventService.endActivity(levelName, levelProps, new App42CallBack() {
-			@Override
-			public void onSuccess(Object response) {
-				callBack.onApp42Result((App42Response) response);
-			}
-
-			@Override
-			public void onException(Exception ex) {
-				callBack.onApp42Error(ex);
-			}
-		});
 	}
 
 }

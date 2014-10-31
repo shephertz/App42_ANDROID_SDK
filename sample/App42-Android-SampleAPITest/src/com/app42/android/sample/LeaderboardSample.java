@@ -30,7 +30,7 @@ AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.leaderboard);
 		list=(ListView)findViewById(R.id.leaderBoardList);
-		asyncService = AsyncApp42ServiceApi.instance(this);
+		asyncService = AsyncApp42ServiceApi.instance();
 	}
 	
 	public void onPreviousClicked(View view) {

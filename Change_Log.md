@@ -1,3 +1,6 @@
+* [Release Version 3.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-32)
+* [Release Version 3.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-31)
+* [Release Version 3.0.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-301)
 * [Release Version 2.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-29)
 * [Release Version 2.8.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-281)
 * [Release Version 2.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-28)
@@ -15,6 +18,63 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+## Version 3.2
+
+**Release Date:** 07-04-2015 
+
+**Release Version:** 3.2
+
+**The following features have been pushed to the services :**
+
+**EVENT SERVICE**
+
+```
+App42API.enableAppALiveTrack(enable);
+```
+
+
+**This release contains the following bug fix:**
+
+```
+None
+```
+
+## Version 3.1
+
+**Release Date:** 20-01-2015
+
+**Release Version:** 3.1
+
+**The following SDK plugin has been pushed to the latest :**
+
+```
+Campaign plugin SDK and relevant changes in Android SDK 
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
+
+## Version 3.0.1
+
+**Release Date:** 05-11-2014 
+
+**Release Version:** 3.0.1
+
+**The following Service has been pushed to the latest :**
+
+```
+Event Service
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 2.9
 

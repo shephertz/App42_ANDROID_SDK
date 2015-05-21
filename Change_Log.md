@@ -1,3 +1,4 @@
+* [Release Version 3.3](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-33)
 * [Release Version 3.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-32)
 * [Release Version 3.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-31)
 * [Release Version 3.0.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-301)
@@ -18,6 +19,28 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+## Version 3.3
+
+**Release Date:** 21-05-2015 
+
+**Release Version:** 3.3
+
+**The following features have been pushed to the services :**
+
+**App42Application**
+
+```
+App42Application.getCurrentActivity();
+```
+
+
+**This release contains the following bug fix:**
+
+```
+None
+```
+
 
 ## Version 3.2
 

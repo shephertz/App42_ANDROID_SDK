@@ -27,7 +27,7 @@ AsyncApp42ServiceApi.App42UserServiceListener {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.user);
-		asyncService = AsyncApp42ServiceApi.instance();
+		asyncService = AsyncApp42ServiceApi.instance(this);
 	}
 
 	public void onPreviousClicked(View view) {

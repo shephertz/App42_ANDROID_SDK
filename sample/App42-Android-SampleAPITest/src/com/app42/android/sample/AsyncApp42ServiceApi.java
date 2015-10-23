@@ -4,10 +4,11 @@ import java.math.BigDecimal;
 
 import org.json.JSONObject;
 
+import android.content.Context;
 import android.os.Handler;
 
+import com.shephertz.app42.paas.sdk.android.App42API;
 import com.shephertz.app42.paas.sdk.android.App42Exception;
-import com.shephertz.app42.paas.sdk.android.ServiceAPI;
 import com.shephertz.app42.paas.sdk.android.game.Game;
 import com.shephertz.app42.paas.sdk.android.game.ScoreBoardService;
 import com.shephertz.app42.paas.sdk.android.storage.Storage;
@@ -25,22 +26,21 @@ public class AsyncApp42ServiceApi {
 	private ScoreBoardService scoreBoardService;
 	private static AsyncApp42ServiceApi mInstance = null;
 	
-	private AsyncApp42ServiceApi() {
-		ServiceAPI sp = new ServiceAPI(Constants.App42ApiKey,
-				Constants.App42ApiSecret);
-		this.userService = sp.buildUserService();
-		this.storageService = sp.buildStorageService();
-		this.scoreBoardService = sp.buildScoreBoardService();
-		this.uploadService = sp.buildUploadService();
+	private AsyncApp42ServiceApi(Context context) {
+		App42API.initialize(context, Constants.App42ApiKey, Constants.App42ApiSecret);
+		this.userService = App42API.buildUserService();
+		this.storageService = App42API.buildStorageService();
+		this.scoreBoardService = App42API.buildScoreBoardService();
+		this.uploadService = App42API.buildUploadService();
 	}
 
 	/*
 	 * instance of class
 	 */
-	public static AsyncApp42ServiceApi instance() {
+	public static AsyncApp42ServiceApi instance(Context context) {
 
 		if (mInstance == null) {
-			mInstance = new AsyncApp42ServiceApi();
+			mInstance = new AsyncApp42ServiceApi(context);
 		}
 
 		return mInstance;
@@ -77,7 +77,7 @@ public class AsyncApp42ServiceApi {
 			}
 		}.start();
 	}
-
+	
 	/*
 	 * This function validate user's authentication with APP42
 	 */

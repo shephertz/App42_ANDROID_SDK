@@ -16,10 +16,14 @@ import android.view.View;
 
 import com.app42.api.test.R;
 
+
+
+
 public class MainActivity extends Activity  {
 	
 	private String userName = "userNameAks" + new Date().getTime();
 	
+
 	/** Called when the activity is first created. **/
 	@Override
 	public void onCreate(Bundle savedInstanceState) {

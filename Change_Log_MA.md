@@ -1,7 +1,7 @@
 
-* [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md_MA#version-20)
-* [Release Version 1.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md_MA#version-11)
-* [Release Version 1.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md_MA#version-10)
+* [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-20)
+* [Release Version 1.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-11)
+* [Release Version 1.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-10)
 
 ## Version 2.0
 

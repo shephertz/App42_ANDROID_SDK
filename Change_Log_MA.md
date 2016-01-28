@@ -1,7 +1,27 @@
-
+* [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-30)
 * [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-20)
 * [Release Version 1.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-11)
 * [Release Version 1.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-10)
+
+## Version 3.0
+
+**Release Date:** 27-01-2016 
+
+**Release Version:** 3.0
+
+**The following features have been added to the Marketing Automation SDK :**
+
+**App Virality API**
+
+**Coupon code management in InAppMessages**
+
+**MA SDK as a library **
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 2.0
 

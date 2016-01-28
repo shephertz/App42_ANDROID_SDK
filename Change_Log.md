@@ -1,4 +1,5 @@
 * [Release Version 3.4](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-35)
+* [Release Version 3.4](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-35)
 * [Release Version 3.4](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-34)
 * [Release Version 3.3](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-33)
 * [Release Version 3.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-32)
@@ -21,6 +22,20 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+## Version 3.6
+
+**Release Date:** 27-01-2016 
+
+**Release Version:** 3.6
+
+**App Virality module API added in Marketing Automation :**
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 3.5
 

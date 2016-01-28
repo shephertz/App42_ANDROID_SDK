@@ -1,0 +1,30 @@
+<!--
+  Copyright 2012 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+
+<resources>
+
+    <string name="app_name">Demo Application</string>
+    <string name="dummy_section_text">Section %1d is just a dummy section.</string>
+    <string name="demo_external_activity">Demo External Activity</string>
+    <string name="demo_collection">Demo Collection</string>
+    <string name="app42_virality_title">Referral Title</string>
+    <string name="app42_virality_desc">Refer offer description is here. </string>
+    <string name="app42_referral_link_title">Your personal referral Link Title:</string>
+  
+    <string name="app42_referral_link_url">Your personal referral Link Url:</string>
+    <string name="app42_no_social_app">No Social application is installed:</string>
+
+</resources>

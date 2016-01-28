@@ -1,0 +1,147 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+  <EditText
+        android:id="@+id/editUserId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:hint="Ajay"
+        android:minHeight="50dp"
+        android:textSize="16dp" />
+    <EditText
+        android:id="@+id/editEventKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+         android:layout_below="@+id/editUserId"
+        android:layout_marginTop="20dp"
+        android:hint="Event Props Key"
+        android:minHeight="50dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editEventValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="20dp"
+         android:layout_below="@+id/editUserId"
+        android:layout_toRightOf="@+id/editEventKey"
+        android:hint="Event Props value"
+        android:minHeight="50dp"
+        android:textSize="16dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/addEventProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+       android:layout_below="@+id/editUserId"
+        android:layout_toRightOf="@+id/editEventValue"
+        android:background="@android:drawable/ic_input_add"
+        android:onClick="onAddEventProps" />
+
+    <Button
+        android:id="@+id/trackEventBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editEventKey"
+        android:onClick="onTrackEvent"
+        android:text="Track Event" />
+
+    <EditText
+        android:id="@+id/editActivtyEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editEventKey"
+        android:layout_toRightOf="@+id/trackEventBtn"
+        android:hint="Track Event Name"
+        android:minHeight="50dp"
+        android:textSize="16dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/startActivityTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editActivtyEventName"
+        android:onClick="onStartActivity"
+        android:text="StartActivity" />
+
+    <Button
+        android:id="@+id/endActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editActivtyEventName"
+        android:onClick="onEndActivity"
+        android:text="EndActivity" />
+
+    <EditText
+        android:id="@+id/editKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/setBtn"
+        android:layout_below="@+id/startActivityTrack"
+        android:layout_marginTop="20dp"
+        android:hint="Props Key"
+        android:minHeight="50dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/editValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/startActivityTrack"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/editKey"
+        android:hint="Props value"
+        android:minHeight="50dp"
+        android:textSize="16dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/addUserProp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/editValue"
+         android:layout_below="@+id/startActivityTrack"
+        android:background="@android:drawable/ic_input_add"
+        android:onClick="onAddUserProps" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editKey"
+        android:onClick="onSetProperties"
+        android:text="Set User Props" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editKey"
+        android:onClick="onUpdateProperties"
+        android:text="Update User Props" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="App42Response"
+        android:textSize="16dp" />
+
+</RelativeLayout>

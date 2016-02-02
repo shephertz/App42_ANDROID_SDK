@@ -15,8 +15,8 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
 
-import com.shephertz.app42.appclay.R;
 import com.shephertz.app42.iam.App42CampaignAPI;
+import com.shephertz.app42.ma.sample.R;
 import com.shephertz.app42.virality.App42ViralityGridView;
 import com.shephertz.app42.virality.ViralityUtil;
 import com.shephertz.app42.virality.model.SocialItem;

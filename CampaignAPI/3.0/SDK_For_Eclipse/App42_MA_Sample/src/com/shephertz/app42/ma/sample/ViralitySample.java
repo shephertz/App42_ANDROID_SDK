@@ -19,7 +19,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.shephertz.app42.ma.sample.R;
 import com.shephertz.app42.iam.App42CampaignAPI;
 import com.shephertz.app42.iam.ui.ViralityActivity;
 import com.shephertz.app42.iam.utils.InAppPreferences;

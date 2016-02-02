@@ -18,7 +18,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.shephertz.app42.appclay.R;
+import com.shephertz.app42.ma.sample.R;
 import com.shephertz.app42.virality.model.SocialItem;
 
 /**

@@ -16,7 +16,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.shephertz.app42.ma.sample.R;
 import com.shephertz.app42.ma.sample.App42Event.App42EventListener;
 import com.shephertz.app42.paas.sdk.android.App42API;
 import com.shephertz.app42.paas.sdk.android.App42Response;
@@ -60,7 +59,7 @@ public class EventActivity extends Activity implements App42EventListener {
 		intializeViews();
 		app42Event = new App42Event(this);
 	}
-	
+
 
 
 	/**

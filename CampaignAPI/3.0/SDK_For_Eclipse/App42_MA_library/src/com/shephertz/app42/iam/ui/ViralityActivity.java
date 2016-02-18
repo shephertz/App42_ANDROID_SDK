@@ -7,6 +7,7 @@ package com.shephertz.app42.iam.ui;
 
 import java.util.ArrayList;
 
+import android.R;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +17,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.TextView;
 
 import com.shephertz.app42.iam.App42CampaignAPI;
-import com.shephertz.app42.ma.sample.R;
 import com.shephertz.app42.virality.App42ViralityGridView;
 import com.shephertz.app42.virality.ViralityUtil;
 import com.shephertz.app42.virality.model.SocialItem;

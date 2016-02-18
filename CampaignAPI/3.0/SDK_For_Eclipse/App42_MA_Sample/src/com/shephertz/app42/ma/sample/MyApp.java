@@ -35,9 +35,9 @@ public class MyApp extends App42Application {
 					getContentResolver(), "android_id");
 		   		
 		   		//Can change userId here
-		   		App42API.setLoggedInUser(userId);
-		   		App42CampaignAPI.initWithListener(new InAppListener(), 5);
-		   		App42API.enableAppStateEventTracking(true);	
-		   		App42API.enableCrashEventHandler(true);
+//		   		App42API.setLoggedInUser(userId);
+//		   		App42CampaignAPI.initWithListener(new InAppListener(), 5);
+//		   		App42API.enableAppStateEventTracking(true);	
+//		   		App42API.enableCrashEventHandler(true);
 	}
 }

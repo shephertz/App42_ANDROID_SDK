@@ -1,3 +1,8 @@
+/**
+ * -----------------------------------------------------------------------
+ *     Copyright  2010 ShepHertz Technologies Pvt Ltd. All rights reserved.
+ * -----------------------------------------------------------------------
+ */
 package com.app42.android.sample;
 
 import java.math.BigDecimal;
@@ -16,15 +21,24 @@ import com.app42.api.test.R;
 import com.shephertz.app42.paas.sdk.android.App42Exception;
 import com.shephertz.app42.paas.sdk.android.game.Game;
 
+/**
+ * The Class LeaderboardSample.
+ */
 public class LeaderboardSample extends Activity implements
 AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 
+	/** The async service. */
 	private AsyncApp42ServiceApi asyncService;
 
+	/** The progress dialog. */
 	private ProgressDialog progressDialog;
 	
+	/** The list. */
 	ListView list;
 	
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,28 +47,51 @@ AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 		asyncService = AsyncApp42ServiceApi.instance(this);
 	}
 	
+	/**
+	 * On previous clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onPreviousClicked(View view) {
 		Intent mainIntent = new Intent(this, UploadSample.class);
 		this.startActivity(mainIntent);
 	}
 	
+	/**
+	 * On next clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onNextClicked(View view) {
 		Intent mainIntent = new Intent(this, MainActivity.class);
 		this.startActivity(mainIntent);
 	}
 	
+	/**
+	 * On get score clicked.
+	 *
+	 * @param viewe the viewe
+	 */
 	public void onGetScoreClicked(View viewe){
 		progressDialog = ProgressDialog.show(this, "", "Loading..");
 		progressDialog.setCancelable(true);
 		asyncService.getLeaderBoard(Constants.App42GameName, 6, this);
 	}
 	
+	/**
+	 * On save score clicked.
+	 *
+	 * @param viewe the viewe
+	 */
 	public void onSaveScoreClicked(View viewe){
 		progressDialog = ProgressDialog.show(this, "", "Saving Score..");
 		progressDialog.setCancelable(true);
 		asyncService.saveScoreForUser(Constants.App42GameName, Constants.UserName, new BigDecimal(10000), this);
 	}
 	
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42ScoreBoardServiceListener#onSaveScoreSuccess(com.shephertz.app42.paas.sdk.android.game.Game)
+	 */
 	@Override
 	public void onSaveScoreSuccess(Game response) {
 		// TODO Auto-generated method stub
@@ -63,6 +100,9 @@ AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 				+  " With Score : " + response.getScoreList().get(0).getValue());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42ScoreBoardServiceListener#onSaveScoreFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onSaveScoreFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -70,6 +110,9 @@ AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 		createAlertDialog("Exception Occurred : "+ ex.getMessage());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42ScoreBoardServiceListener#onLeaderBoardSuccess(com.shephertz.app42.paas.sdk.android.game.Game)
+	 */
 	@Override
 	public void onLeaderBoardSuccess(Game response) {
 		// TODO Auto-generated method stub
@@ -90,6 +133,9 @@ AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 	}
 
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42ScoreBoardServiceListener#onLeaderBoardFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onLeaderBoardFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -97,6 +143,11 @@ AsyncApp42ServiceApi.App42ScoreBoardServiceListener {
 		createAlertDialog("Exception Occurred : "+ ex.getMessage());
 	}
 	
+	/**
+	 * Creates the alert dialog.
+	 *
+	 * @param msg the msg
+	 */
 	public void createAlertDialog(String msg) {
 		AlertDialog.Builder alertbox = new AlertDialog.Builder(
 				LeaderboardSample.this);

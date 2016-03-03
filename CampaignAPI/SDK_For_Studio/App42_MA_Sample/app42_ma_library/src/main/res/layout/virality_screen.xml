@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appvirality_wom_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b998b1" >
+
+    <TextView
+        android:id="@+id/app42_virality_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/app42_virality_title"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app42_virality_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app42_virality_title"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/app42_virality_desc"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/app42_referral_link_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app42_virality_desc"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:paddingBottom="1dp"
+        android:text="@string/app42_referral_link_title"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:id="@+id/app42_referral_link_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app42_referral_link_title"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:text="@string/app42_referral_link_url"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/app42_no_social_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app42_referral_link_url"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:text="@string/app42_no_social_app"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <com.shephertz.app42.virality.App42ViralityGridView
+        android:id="@+id/app42_virality_gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app42_no_social_app"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:horizontalSpacing="5.0dip"
+        android:isScrollContainer="false"
+        android:numColumns="3"
+        android:paddingBottom="10dp"
+        android:verticalSpacing="5.0dip" />
+
+</RelativeLayout>

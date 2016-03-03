@@ -1,3 +1,8 @@
+/**
+ * -----------------------------------------------------------------------
+ *     Copyright  2010 ShepHertz Technologies Pvt Ltd. All rights reserved.
+ * -----------------------------------------------------------------------
+ */
 package com.app42.android.sample;
 
 import org.json.JSONException;
@@ -15,13 +20,24 @@ import com.app42.api.test.R;
 import com.shephertz.app42.paas.sdk.android.App42Exception;
 import com.shephertz.app42.paas.sdk.android.storage.Storage;
 
+/**
+ * The Class StorageSample.
+ */
 public class StorageSample extends Activity implements
 AsyncApp42ServiceApi.App42StorageServiceListener {
 
+	/** The async service. */
 	private AsyncApp42ServiceApi asyncService;
 
+	/** The progress dialog. */
 	private ProgressDialog progressDialog;
+	
+	/** The doc id. */
 	private String docId = "";
+	
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -29,16 +45,31 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		asyncService = AsyncApp42ServiceApi.instance(this);
 	}
 	
+	/**
+	 * On previous clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onPreviousClicked(View view) {
 		Intent mainIntent = new Intent(this, UserSample.class);
 		this.startActivity(mainIntent);
 	}
 	
+	/**
+	 * On next clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onNextClicked(View view) {
 		Intent mainIntent = new Intent(this, UploadSample.class);
 		this.startActivity(mainIntent);
 	}
 	
+	/**
+	 * On insert clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onInsertClicked(View view) {
 		progressDialog = ProgressDialog.show(this, "", "Inserting..");
 		progressDialog.setCancelable(true);
@@ -55,12 +86,22 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 	}
 	
 	
+	/**
+	 * On find clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onFindClicked(View view) {
 		progressDialog = ProgressDialog.show(this, "", "Searching..");
 		progressDialog.setCancelable(true);
 		asyncService.findDocByDocId(Constants.App42DBName, Constants.CollectionName, docId, this);
 	}
 	
+	/**
+	 * On update clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onUpdateClicked(View view) {
 		progressDialog = ProgressDialog.show(this, "", "Updating..");
 		progressDialog.setCancelable(true);
@@ -76,6 +117,9 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		asyncService.updateDocByKeyValue(Constants.App42DBName, Constants.CollectionName, "Name", "Nick", jsonToUpdate,  this);
 	}
 	
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42StorageServiceListener#onDocumentInserted(com.shephertz.app42.paas.sdk.android.storage.Storage)
+	 */
 	@Override
 	public void onDocumentInserted(Storage response) {
 		// TODO Auto-generated method stub
@@ -91,6 +135,9 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42StorageServiceListener#onInsertionFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onInsertionFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -98,6 +145,9 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		createAlertDialog("Exception Occurred : "+ ex.getMessage());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42StorageServiceListener#onFindDocFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onFindDocFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -105,6 +155,9 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		createAlertDialog("Exception Occurred : "+ ex.getMessage());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42StorageServiceListener#onFindDocSuccess(com.shephertz.app42.paas.sdk.android.storage.Storage)
+	 */
 	@Override
 	public void onFindDocSuccess(Storage response) {
 		// TODO Auto-generated method stub
@@ -112,6 +165,9 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		createAlertDialog("Document SuccessFully Fetched : "+ response.getJsonDocList().get(0).getJsonDoc());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42StorageServiceListener#onUpdateDocSuccess(com.shephertz.app42.paas.sdk.android.storage.Storage)
+	 */
 	@Override
 	public void onUpdateDocSuccess(Storage response) {
 		// TODO Auto-generated method stub
@@ -119,6 +175,9 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		createAlertDialog("Document SuccessFully Updated : "+ response.getJsonDocList().get(0).getJsonDoc());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42StorageServiceListener#onUpdateDocFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onUpdateDocFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -126,6 +185,11 @@ AsyncApp42ServiceApi.App42StorageServiceListener {
 		createAlertDialog("Exception Occurred : "+ ex.getMessage());
 	}
 
+	/**
+	 * Creates the alert dialog.
+	 *
+	 * @param msg the msg
+	 */
 	public void createAlertDialog(String msg) {
 		AlertDialog.Builder alertbox = new AlertDialog.Builder(
 				StorageSample.this);

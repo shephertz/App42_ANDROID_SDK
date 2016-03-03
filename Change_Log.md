@@ -1,3 +1,4 @@
+* [Release Version 3.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-38)
 * [Release Version 3.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-37)
 * [Release Version 3.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-36)
 * [Release Version 3.5](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-35)
@@ -24,6 +25,26 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+
+## Version 3.8
+
+**Release Date:** 03-03-2016
+
+**Release Version:** 3.8
+
+**The following features have been pushed to the services :**
+
+**App Virality API**
+
+```
+API that are useful in Virality feature
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 ## Version 3.7
 

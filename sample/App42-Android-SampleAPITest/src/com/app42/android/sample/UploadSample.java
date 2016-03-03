@@ -1,3 +1,8 @@
+/**
+ * -----------------------------------------------------------------------
+ *     Copyright  2010 ShepHertz Technologies Pvt Ltd. All rights reserved.
+ * -----------------------------------------------------------------------
+ */
 package com.app42.android.sample;
 
 import java.io.InputStream;
@@ -23,19 +28,33 @@ import com.shephertz.app42.paas.sdk.android.App42Exception;
 import com.shephertz.app42.paas.sdk.android.upload.Upload;
 import com.shephertz.app42.paas.sdk.android.upload.UploadFileType;
 
+/**
+ * The Class UploadSample.
+ */
 public class UploadSample extends Activity implements
 		AsyncApp42ServiceApi.App42UploadServiceListener {
 
+	/** The async service. */
 	private AsyncApp42ServiceApi asyncService;
 
+	/** The progress dialog. */
 	private ProgressDialog progressDialog;
 
+	/** The file name. */
 	private String fileName = "IMAGE" + new Date().getTime();
+	
+	/** The Description. */
 	private String Description = "This Is IMAGE File";
+	
+	/** The result load image. */
 	private final int RESULT_LOAD_IMAGE = 1;
 
+	/** The image view. */
 	ImageView imageView;
 
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onCreate(android.os.Bundle)
+	 */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -44,20 +63,40 @@ public class UploadSample extends Activity implements
 		asyncService = AsyncApp42ServiceApi.instance(this);
 	}
 
+	/**
+	 * On previous clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onPreviousClicked(View view) {
 		Intent mainIntent = new Intent(this, StorageSample.class);
 		this.startActivity(mainIntent);
 	}
 
+	/**
+	 * On next clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onNextClicked(View view) {
 		Intent mainIntent = new Intent(this, LeaderboardSample.class);
 		this.startActivity(mainIntent);
 	}
 
+	/**
+	 * On upload file clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onUploadFileClicked(View view) {
 		browsePhoto();
 	}
 
+	/**
+	 * Upload image.
+	 *
+	 * @param imagePath the image path
+	 */
 	public void uploadImage(String imagePath) {
 		progressDialog = ProgressDialog.show(this, "",
 				"Please Wait.. Uploading...");
@@ -66,6 +105,9 @@ public class UploadSample extends Activity implements
 				Description, this);
 	}
 
+	/**
+	 * Browse photo.
+	 */
 	/*
 	 * Browse Gallery for choosing the Image to upload.
 	 */
@@ -75,6 +117,9 @@ public class UploadSample extends Activity implements
 		startActivityForResult(i, RESULT_LOAD_IMAGE);
 	}
 
+	/* (non-Javadoc)
+	 * @see android.app.Activity#onActivityResult(int, int, android.content.Intent)
+	 */
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		super.onActivityResult(requestCode, resultCode, data);
@@ -92,6 +137,12 @@ public class UploadSample extends Activity implements
 		}
 	}
 
+	/**
+	 * Load image from url.
+	 *
+	 * @param url the url
+	 * @param img the img
+	 */
 	public void loadImageFromUrl(final String url, final ImageView img) {
 		final Handler callerThreadHandler = new Handler();
 		new Thread() {
@@ -109,6 +160,12 @@ public class UploadSample extends Activity implements
 		}.start();
 	}
 
+	/**
+	 * Load bitmap.
+	 *
+	 * @param url the url
+	 * @return the bitmap
+	 */
 	// decodes image and scales it to reduce memory consumption
 	private Bitmap loadBitmap(String url) {
 		try {
@@ -143,12 +200,20 @@ public class UploadSample extends Activity implements
 		return null;
 	}
 
+	/**
+	 * On get files clicked.
+	 *
+	 * @param view the view
+	 */
 	public void onGetFilesClicked(View view) {
 		progressDialog = ProgressDialog.show(this, "", "Getting Image..");
 		progressDialog.setCancelable(true);
 		asyncService.getImage(fileName, this);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42UploadServiceListener#onUploadImageSuccess(com.shephertz.app42.paas.sdk.android.upload.Upload)
+	 */
 	@Override
 	public void onUploadImageSuccess(Upload response) {
 		// TODO Auto-generated method stub
@@ -156,6 +221,9 @@ public class UploadSample extends Activity implements
 		createAlertDialog("SUccessFully Uploaded : " + response);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42UploadServiceListener#onUploadImageFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onUploadImageFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -163,6 +231,9 @@ public class UploadSample extends Activity implements
 		createAlertDialog("Exception Occurred : " + ex.getMessage());
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42UploadServiceListener#onGetImageSuccess(com.shephertz.app42.paas.sdk.android.upload.Upload)
+	 */
 	@Override
 	public void onGetImageSuccess(Upload response) {
 		// TODO Auto-generated method stub
@@ -170,6 +241,9 @@ public class UploadSample extends Activity implements
 		loadImageFromUrl(imageUrl, imageView);
 	}
 
+	/* (non-Javadoc)
+	 * @see com.app42.android.sample.AsyncApp42ServiceApi.App42UploadServiceListener#onGetImageFailed(com.shephertz.app42.paas.sdk.android.App42Exception)
+	 */
 	@Override
 	public void onGetImageFailed(App42Exception ex) {
 		// TODO Auto-generated method stub
@@ -177,6 +251,11 @@ public class UploadSample extends Activity implements
 		createAlertDialog("Exception Occurred : " + ex.getMessage());
 	}
 
+	/**
+	 * Creates the alert dialog.
+	 *
+	 * @param msg the msg
+	 */
 	public void createAlertDialog(String msg) {
 		AlertDialog.Builder alertbox = new AlertDialog.Builder(
 				UploadSample.this);

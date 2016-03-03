@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <Button
+        android:id="@+id/trackEventBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editEventKey"
+        android:onClick="onTrackEvent"
+        android:text="Track Event" />
+
+    <EditText
+        android:id="@+id/editActivtyEventName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editEventKey"
+        android:layout_toRightOf="@+id/trackEventBtn"
+        android:hint="Track Event Name"
+        android:minHeight="50dp"
+        android:textSize="16dp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/shareAppBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editActivtyEventName"
+        android:onClick="onShareApp"
+        android:text="Share App" />
+
+    <Button
+        android:id="@+id/getActiveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/shareAppBtn"
+        android:onClick="onGetActiveCamp"
+        android:text="Get Active Campaigns" />
+    <EditText
+        android:id="@+id/editCampaignName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/getActiveBtn"
+        android:hint="Campaign Name"
+        android:minHeight="50dp"
+        android:textSize="16dp" >
+    </EditText>
+   
+    <Button
+        android:id="@+id/getRewardsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editCampaignName"
+        android:onClick="onGetUserRewards"
+        android:text="Rewards OfUser" />
+
+    <Button
+        android:id="@+id/redeemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editCampaignName"
+        android:onClick="onRedeemRewards"
+        android:text="Redeem Rewards" />
+      <Button
+        android:id="@+id/nextScreenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/redeemBtn"
+        android:onClick="onNext"
+        android:text="Enable Earn" />
+      
+         <Button
+        android:id="@+id/insatllBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/redeemBtn"
+        android:onClick="doInstall"
+        android:text="Install Referrer" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="App42Response"
+        android:textSize="16dp" />
+
+</RelativeLayout>

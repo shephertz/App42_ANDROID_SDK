@@ -1,0 +1,1 @@
+include ':app', ':app42_ma_library'

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App42_Ma_Library</string>
+    <string name="app42_virality_title">Referral Title</string>
+    <string name="app42_virality_desc">Refer offer description is here. </string>
+    <string name="app42_referral_link_title">Your personal referral Link Title:</string>
+
+    <string name="app42_referral_link_url">Your personal referral Link Url:</string>
+    <string name="app42_no_social_app">No Social application is installed:</string>
+</resources>

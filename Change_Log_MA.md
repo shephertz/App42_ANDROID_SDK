@@ -1,8 +1,26 @@
+* [Release Version 3.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-31)
 * [Release Version 3.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-30)
 * [Release Version 2.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-20)
 * [Release Version 1.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-11)
 * [Release Version 1.0](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log_MA.md#version-10)
 
+## Version 3.1
+
+**Release Date:** 03-03-2016 
+
+**Release Version:** 3.1
+
+**The following features have been added to the Marketing Automation SDK :**
+
+**Custom inApp Dialog**
+
+**MA SDK as a library **
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 ## Version 3.0
 
 **Release Date:** 27-01-2016 

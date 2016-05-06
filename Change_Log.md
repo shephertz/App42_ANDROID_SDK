@@ -1,3 +1,4 @@
+* [Release Version 3.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-39)
 * [Release Version 3.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-38)
 * [Release Version 3.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-37)
 * [Release Version 3.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-36)
@@ -25,7 +26,25 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+## Version 3.9
 
+**Release Date:** 06-05-2016
+
+**Release Version:** 3.9
+
+**The following features have been pushed to the services :**
+
+**Geo Fencing API **
+
+```
+API that are useful in Geo Fence feature in Push Notification
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 ## Version 3.8
 
 **Release Date:** 03-03-2016

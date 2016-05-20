@@ -21,6 +21,7 @@ __Eclipse Configuration :-__
 __Android Studio Configuration :-__
 
 1). Then add App42_ANDROID_SDK_x.x.x.jar in your libs folder of your application.
+
 2). Add dependency in build.gradle file of your app.
 
 ```

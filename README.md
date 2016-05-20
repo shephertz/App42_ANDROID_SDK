@@ -13,10 +13,21 @@ __Download And Set Up SDK :-__
 
 3). Version folder will contain App42_ANDROID_SDK_x.x.x.jar and docs.
 
-4). Then add App42_ANDROID_SDK_x.x.x.jar in your lib folder.
+__Eclipse Configuration :-__
+1). Then add App42_ANDROID_SDK_x.x.x.jar in your libs folder.
  
-5). Put the jar file in class path of your Android project.
+2). Put the jar file in class path of your Android project.
 
+__Android Studio Configuration :-__
+
+1). Then add App42_ANDROID_SDK_x.x.x.jar in your libs folder of your application.
+2). Add dependency in build.gradle file of your app.
+
+```
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+```
 __Initializing SDK :-__
 You have to instantiate App42API by putting your ApiKey/SecretKey to initialize the SDK.
 

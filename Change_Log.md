@@ -1,3 +1,4 @@
+* [Release Version 3.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-391)
 * [Release Version 3.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-39)
 * [Release Version 3.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-38)
 * [Release Version 3.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-37)
@@ -25,6 +26,21 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+
+## Version 3.9.1
+
+**Release Date:** 30-06-2016
+
+**Release Version:** 3.9.1
+
+
+
+**This release contains the following bug fix:**
+
+```
+App42 Offline Storage 
+```
 
 ## Version 3.9
 

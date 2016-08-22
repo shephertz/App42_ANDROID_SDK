@@ -29,7 +29,6 @@ public class MyApp extends App42Application {
 	@Override
 	public void onCreate() {
 		super.onCreate();
-		//My app Keys KeysforHDFC Remove after testing
 		 App42API.initialize(
 		   		 this,
 		   		 "Api Key",

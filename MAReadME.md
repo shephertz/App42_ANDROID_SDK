@@ -18,7 +18,7 @@ __Download And Set Up SDK :-__
 5). Configure your project based on IDE.
 
 __Initializing SDK :-__
-You have to instantiate App42API by putting your ApiKey/SecretKey to initialize the SDK. Create a project application class and Extends it by App42Application.Add the same name in Android Manifest.xml file.for e.g.
+You have to instantiate App42API by putting your ApiKey/SecretKey to initialize the SDK. Create a project application class and Extends it by App42Application.Add the same name in Android Manifest.xml file.This is mandatory if you want to track AppSession Automatically. for e.g.
 
 ```
 public class MyApp extends App42Application {

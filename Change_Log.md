@@ -1,4 +1,5 @@
-* [Release Version 3.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-391)
+* [Release Version 3.9.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-392)
+* [Release Version 3.9.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-391)
 * [Release Version 3.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-39)
 * [Release Version 3.8](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-38)
 * [Release Version 3.7](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-37)
@@ -27,6 +28,19 @@
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
+
+## Version 3.9.2
+
+**Release Date:** 22-08-2016
+
+**Release Version:** 3.9.2
+
+
+**This release contains the following bug fix:**
+
+```
+Active Users based on AppSession in Marketing Automation
+```
 
 ## Version 3.9.1
 

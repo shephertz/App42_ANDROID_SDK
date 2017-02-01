@@ -34,7 +34,7 @@ import com.shephertz.app42.iam.utils.InAppDefines.CrossStatus;
 import com.shephertz.app42.iam.utils.InAppDefines.LayoutGravity;
 import com.shephertz.app42.iam.utils.InAppDefines.LayoutType;
 import com.shephertz.app42.iam.utils.InAppUtils;
-import com.shephertz.app42.ma.sample.R;
+import com.shephertz.app42.ma.library.R;
 
 /**
  * The Class CustomDialog.

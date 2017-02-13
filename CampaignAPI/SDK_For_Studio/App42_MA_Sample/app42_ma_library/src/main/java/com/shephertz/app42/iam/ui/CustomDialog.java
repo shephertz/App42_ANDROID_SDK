@@ -35,6 +35,8 @@ import com.shephertz.app42.iam.utils.InAppDefines.CrossStatus;
 import com.shephertz.app42.iam.utils.InAppDefines.LayoutGravity;
 import com.shephertz.app42.iam.utils.InAppDefines.LayoutType;
 import com.shephertz.app42.iam.utils.InAppUtils;
+
+import org.json.JSONObject;
 import com.shephertz.app42.ma.library.R;
 
 /**
@@ -130,6 +132,11 @@ public class CustomDialog  implements InAppAction {
 					performAccpetAction(messageData.getCampName(), messageData.getAction());
 			}
 		});
+		
+		// Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignViewed_"
+				+ inAppData.getCampName(), new JSONObject());
+		InAppManager.performActions(action);
 	}
 	
 	/**
@@ -331,6 +338,11 @@ public class CustomDialog  implements InAppAction {
 	public void performCancelAction(String campName, App42Action app42Action) {
 		// TODO Auto-generated method stub
 		InAppManager.performActions(app42Action);
+		
+		// Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignSkip_"
+				+ campName, new JSONObject());
+		InAppManager.performActions(action);
 	}
 
 	/*
@@ -344,6 +356,11 @@ public class CustomDialog  implements InAppAction {
 	public void performAccpetAction(String campName, App42Action app42Action) {
 		// TODO Auto-generated method stub
 		InAppManager.performActions(app42Action);
+		
+		//Event For Analytics comment it if not required
+				App42Action action = new App42Action("trackEvent", "CampaignSubmit_"
+						+ campName, new JSONObject());
+				InAppManager.performActions(action);
 	}
 
 }

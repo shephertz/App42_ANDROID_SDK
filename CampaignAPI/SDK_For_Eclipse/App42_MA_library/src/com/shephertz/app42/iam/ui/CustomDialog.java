@@ -13,6 +13,7 @@ import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.Display;
 import android.view.Gravity;
@@ -34,6 +35,8 @@ import com.shephertz.app42.iam.utils.InAppDefines.CrossStatus;
 import com.shephertz.app42.iam.utils.InAppDefines.LayoutGravity;
 import com.shephertz.app42.iam.utils.InAppDefines.LayoutType;
 import com.shephertz.app42.iam.utils.InAppUtils;
+
+import org.json.JSONObject;
 import com.shephertz.app42.ma.library.R;
 
 /**
@@ -72,8 +75,8 @@ public class CustomDialog  implements InAppAction {
 		displayWidth = size.x;
 		displayHeight = size.y;
 		this.messageData = (CustomDialogData) inAppData;
-		
-		LayoutInflater inflater = (LayoutInflater) activity
+
+        LayoutInflater inflater = (LayoutInflater) activity
 				.getSystemService(activity.LAYOUT_INFLATER_SERVICE);
 		View layout = inflater.inflate(
 				getLayoutType(messageData.getLayoutType()), null);
@@ -93,7 +96,7 @@ public class CustomDialog  implements InAppAction {
 		setImageBackgorund(layout, activity);
 		layoutParams.width = displayWidth;
 		layoutParams.height = getLayoutHeight(messageData.getLayoutGravity());
-		layoutParams.gravity = getLayoutGravity(messageData.getLayoutGravity());
+        layoutParams.gravity = getLayoutGravity(messageData.getLayoutGravity());
 		//layoutParams.dimAmount = 0.6f;
 		if (messageData.getLayoutGravity() == LayoutGravity.Center) {
 //			int gap=InAppUiUtils.pxToDp(activity, 20);
@@ -129,6 +132,11 @@ public class CustomDialog  implements InAppAction {
 					performAccpetAction(messageData.getCampName(), messageData.getAction());
 			}
 		});
+		
+		// Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignViewed_"
+				+ inAppData.getCampName(), new JSONObject());
+		InAppManager.performActions(action);
 	}
 	
 	/**
@@ -271,11 +279,18 @@ public class CustomDialog  implements InAppAction {
 	private int getLayoutHeight(LayoutGravity gravity) {
 		switch (gravity) {
 		case Top:
-			return (displayHeight) / 6;
+			return (displayHeight) / 5;
 		case Center:
-			return (displayHeight) /2;
+//			return (displayHeight) /2;
+            // TODO: 1/28/2017 Changes in height if layout gravity is center and layout type is left or right or no image
+            if (messageData.getLayoutType() == (LayoutType.LeftImage) || messageData.getLayoutType() == LayoutType.RightImage ||
+                    messageData.getLayoutType() == LayoutType.NoImage){
+            return (displayHeight) / 4;
+        } else{
+            return (displayHeight) / 3;
+        }
 		case Bottom:
-			return (displayHeight) / 6;
+			return (displayHeight) / 4;
 		default:
 			return (displayHeight) /2;
 		}
@@ -323,6 +338,11 @@ public class CustomDialog  implements InAppAction {
 	public void performCancelAction(String campName, App42Action app42Action) {
 		// TODO Auto-generated method stub
 		InAppManager.performActions(app42Action);
+		
+		// Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignSkip_"
+				+ campName, new JSONObject());
+		InAppManager.performActions(action);
 	}
 
 	/*
@@ -336,6 +356,11 @@ public class CustomDialog  implements InAppAction {
 	public void performAccpetAction(String campName, App42Action app42Action) {
 		// TODO Auto-generated method stub
 		InAppManager.performActions(app42Action);
+		
+		//Event For Analytics comment it if not required
+				App42Action action = new App42Action("trackEvent", "CampaignSubmit_"
+						+ campName, new JSONObject());
+				InAppManager.performActions(action);
 	}
 
 }

@@ -18,7 +18,7 @@ import com.shephertz.app42.iam.model.App42Action;
 import com.shephertz.app42.iam.model.InAppAction;
 import com.shephertz.app42.iam.model.InAppData;
 import com.shephertz.app42.iam.utils.InAppUiUtils;
-
+import org.json.JSONObject;
 // TODO: Auto-generated Javadoc
 /**
  * The Class SimpleDialog.
@@ -71,6 +71,11 @@ public class SimpleDialog implements InAppAction {
 						});
 		AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
+		
+		// Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignViewed_"
+				+ alertInfo.getCampName(), new JSONObject());
+		InAppManager.performActions(action);
 	}
 
 	/**
@@ -121,6 +126,11 @@ public class SimpleDialog implements InAppAction {
 						});
 		AlertDialog alertDialog = alertDialogBuilder.create();
 		alertDialog.show();
+		
+		// Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignViewed_"
+				+ alertInfo.getCampName(), new JSONObject());
+		InAppManager.performActions(action);
 	}
 
 	/*
@@ -133,6 +143,11 @@ public class SimpleDialog implements InAppAction {
 	public void performCancelAction(String campName, App42Action app42Action) {
 		// TODO Auto-generated method stub
 		InAppManager.performActions(app42Action);
+		
+		// Event For Analytics comment it if not required
+				App42Action action = new App42Action("trackEvent", "CampaignSkip_"
+						+ campName, new JSONObject());
+				InAppManager.performActions(action);
 	}
 
 	/*
@@ -145,6 +160,11 @@ public class SimpleDialog implements InAppAction {
 	public void performAccpetAction(String campName, App42Action app42Action) {
 		// TODO Auto-generated method stub
 		InAppManager.performActions(app42Action);
+		
+			//Event For Analytics comment it if not required
+		App42Action action = new App42Action("trackEvent", "CampaignSubmit_"
+				+ campName, new JSONObject());
+		InAppManager.performActions(action);
 
 	}
 

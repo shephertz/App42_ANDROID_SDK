@@ -36,10 +36,10 @@
 **Release Version:** 3.9.2
 
 
-**This release contains the Locale bug fix in timestamp Util method**
+**This release contains the following bug fix:**
 
 ```
-
+Locale issue in timestamp Util method
 ```
 
 ## Version 3.9.1

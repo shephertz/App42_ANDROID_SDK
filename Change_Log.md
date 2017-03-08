@@ -31,20 +31,20 @@
 
 ## Version 3.9.2
 
-**Release Date:** 22-08-2016
+**Release Date:** 08-03-2017
 
 **Release Version:** 3.9.2
 
 
-**This release contains the following bug fix:**
+**This release contains the Locale bug fix in timestamp Util method**
 
 ```
-Active Users based on AppSession in Marketing Automation
+
 ```
 
 ## Version 3.9.1
 
-**Release Date:** 30-06-2016
+**Release Date:** 22-08-2016
 
 **Release Version:** 3.9.1
 
@@ -54,6 +54,8 @@ Active Users based on AppSession in Marketing Automation
 
 ```
 App42 Offline Storage 
+Active Users based on AppSession in Marketing Automation
+
 ```
 
 ## Version 3.9

@@ -41,6 +41,7 @@ public class MyApp extends App42Application {
 		   		App42CampaignAPI.initWithListener(new InAppListener(), 5);
 		   		App42API.enableAppStateEventTracking(true);	
 	}
+	}
 ```
 
 ```
@@ -49,7 +50,7 @@ public class MyApp extends App42Application {
         android:name="com.shephertz.app42.ma.sample.MyApp"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name" >
-	}
+	
 ```
 
 __UI Customization:-__ You can easily customize you inApp lUI by making changes in layouts available in res folder or library project or by making changes in UI classes of

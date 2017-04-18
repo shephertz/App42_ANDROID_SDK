@@ -56,8 +56,8 @@ public class MyApp extends App42Application {
 __UI Customization:-__ You can easily customize you inApp UI by making changes in layouts available in res folder or library project or by making changes in UI classes of
 "com.shephertz.app42.iam.ui" package of library project.
 
-App Virality Integration:- Add following Activity and Receiver in AndroidManifest.xml file to use AppVirality feature.
-==========================
+__App Virality Integration__:- Add following Activity and Receiver in AndroidManifest.xml file to use AppVirality feature.
+
 ```
  <activity
             android:name="com.shephertz.app42.iam.ui.ViralityActivity"

@@ -53,10 +53,10 @@ public class MyApp extends App42Application {
 	
 ```
 
-__UI Customization:-__ You can easily customize you inApp lUI by making changes in layouts available in res folder or library project or by making changes in UI classes of
+__UI Customization:-__ You can easily customize you inApp UI by making changes in layouts available in res folder or library project or by making changes in UI classes of
 "com.shephertz.app42.iam.ui" package of library project.
 
-__App Virality Integration:-__ Add following Activity and Receiver in AndroidManifest.xml file to use AppVirality feature.
+#App Virality Integration:- Add following Activity and Receiver in AndroidManifest.xml file to use AppVirality feature.
 
 ```
  <activity
@@ -74,6 +74,22 @@ __App Virality Integration:-__ Add following Activity and Receiver in AndroidMan
         </receiver>
 ```
  
+__Invoke following code__
+
+Below code snippet required to show the share button inside the application
+
+```
+if (App42CampaignAPI.isViralityAvailable()) {
+    // Show share button
+}
+```
+if user clicks on share button, call the below function 
+
+```
+Intent intent = new Intent(this, ViralityActivity.class);
+    startActivity(intent);
+```
+
 
 
 

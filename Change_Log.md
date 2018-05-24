@@ -1,3 +1,4 @@
+* [Release Version 40](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-40)
 * [Release Version 3.9.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-392)
 * [Release Version 3.9.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-391)
 * [Release Version 3.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-39)
@@ -27,6 +28,46 @@
 * [Release Version 1.9](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-19)
 * [Release Version 1.6.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-161)
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
+
+
+## Version 4.0
+
+**Release Date:** 24-05-2018
+
+**Release Version:** 4.0
+
+**The following features API's have been pushed to the services for GDPR :**
+
+**USER SERVICE**
+
+```
+deleteUserProfile
+unSubscribeMediaChannel
+unSubscribeMediaChannel
+marketingOptout
+getMarketOptoutFlag
+deleteMaUserProfile
+
+```
+
+
+**SOCIAL SERVICE**
+
+```
+deLinkAllSocialAccount  
+```
+
+**Request/Response encryption and decryption added for data security**
+
+```
+Encryption and Decryption added in request response for data security
+```
+
+**This release contains the following bug fix:**
+
+```
+None
+```
 
 
 ## Version 3.9.2

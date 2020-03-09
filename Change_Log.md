@@ -30,6 +30,27 @@
 * [Release Version 1.6](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-16)
 
 
+## Version 4.1.2
+
+**Release Date:** 09-03-2020
+
+**Release Version:** 4.1.2
+
+**This release contains the following changes:**
+
+```
+* Library updated to provide support to the latest Android Version.
+
+```
+
+**This release contains the following bug fix:**
+
+```
+* Service issue fixed.
+* App Live Track issue fixed.
+```
+
+
 ## Version 4.0
 
 **Release Date:** 24-05-2018

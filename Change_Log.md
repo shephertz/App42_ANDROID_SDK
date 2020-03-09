@@ -1,3 +1,4 @@
+* [Release Version 4.1.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-412)
 * [Release Version 40](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-40)
 * [Release Version 3.9.2](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-392)
 * [Release Version 3.9.1](https://github.com/shephertz/App42_ANDROID_SDK/blob/master/Change_Log.md#version-391)
